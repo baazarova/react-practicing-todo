@@ -43,7 +43,8 @@ export const ListTodo = ({ todo, setTodo }) => {
       }}
     >
       {todo.map((item) => {
-        <li
+        
+        return <li
           key={item.id}
           className="item"
           style={{
@@ -53,6 +54,7 @@ export const ListTodo = ({ todo, setTodo }) => {
             padding: "12px 15px",
             border: "1px solid lightgrey",
             borderRadius: "6px",
+            width:"400px"
           }}
         >
             {edit == item.id ? (
